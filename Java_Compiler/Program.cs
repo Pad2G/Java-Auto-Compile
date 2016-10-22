@@ -37,9 +37,9 @@ namespace Java_compiler
                 String ProgFiles64 = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
                 String ProgFiles = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
                 if (System.IO.Directory.Exists(ProgFiles64))
-                     workingdir = System.IO.Directory.GetDirectories(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)+@"\Java");
+                     workingdir = System.IO.Directory.GetDirectories(ProgFiles64 +@"\Java");
                 else if (System.IO.Directory.Exists(ProgFiles))
-                    workingdir86 = System.IO.Directory.GetDirectories(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) + @"\Java");
+                    workingdir86 = System.IO.Directory.GetDirectories(ProgFiles+ @"\Java");
                 String vers = checkJava(workingdir);
                 String versx86 = checkJava(workingdir86);
                 if (vers == null && versx86 == null)

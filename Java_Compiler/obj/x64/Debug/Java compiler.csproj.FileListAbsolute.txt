@@ -1,0 +1,6 @@
+C:\Users\Administrator\documents\visual studio 2015\Projects\Java compiler\Java compiler\bin\x64\Debug\Java compiler.exe.config
+C:\Users\Administrator\documents\visual studio 2015\Projects\Java compiler\Java compiler\bin\x64\Debug\Java compiler.exe
+C:\Users\Administrator\documents\visual studio 2015\Projects\Java compiler\Java compiler\bin\x64\Debug\Java compiler.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\Java compiler\Java compiler\obj\x64\Debug\Java compiler.exe
+C:\Users\Administrator\documents\visual studio 2015\Projects\Java compiler\Java compiler\obj\x64\Debug\Java compiler.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\Java compiler\Java compiler\obj\x64\Debug\Java compiler.csprojResolveAssemblyReference.cache

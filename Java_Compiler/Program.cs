@@ -51,9 +51,9 @@ namespace Java_compiler
                     Console.WriteLine("Sembra che la variabile PATH non sia configurata correttamente...rimedio");
                     String value = "";
                     if (vers!=null)
-                        value = System.Environment.GetEnvironmentVariable("PATH")+ @";"+vers;
+                        value = System.Environment.GetEnvironmentVariable("PATH")+ @";"+vers+@"\bin";;
                     else
-                        value = System.Environment.GetEnvironmentVariable("PATH") + @";"+versx86;
+                        value = System.Environment.GetEnvironmentVariable("PATH") + @";"+versx86+@"\bin";;
                   
                     var target = EnvironmentVariableTarget.Machine;
                     System.Environment.SetEnvironmentVariable("PATH", value, target);

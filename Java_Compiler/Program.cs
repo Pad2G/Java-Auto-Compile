@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,9 +37,9 @@ namespace Java_compiler
                 String ProgFiles64 = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
                 String ProgFiles = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
                 if (System.IO.Directory.Exists(ProgFiles64))
-                     workingdir = System.IO.Directory.GetDirectories(ProgFiles64 +@"\Java");
+                     workingdir = System.IO.Directory.GetDirectories(ProgFiles64+@"\Java");
                 else if (System.IO.Directory.Exists(ProgFiles))
-                    workingdir86 = System.IO.Directory.GetDirectories(ProgFiles+ @"\Java");
+                    workingdir86 = System.IO.Directory.GetDirectories(ProgFiles + @"\Java");
                 String vers = checkJava(workingdir);
                 String versx86 = checkJava(workingdir86);
                 if (vers == null && versx86 == null)
@@ -83,14 +83,9 @@ namespace Java_compiler
                 Process p = new Process();
                 try
                 {
-                    s_dir = s.Replace(s.Substring(s.LastIndexOf('\\')), "");
-                    if (s.Contains("\""))
-                    {
-                        s = s.Replace(s.Substring(1, s.LastIndexOf('\\') + 1), "");
-                    }
-                    else {
-                        s = s.Replace(s.Substring(0, s.LastIndexOf('\\') + 1), "");
-                    }
+                    s_dir = s.Replace(s.Substring(s.LastIndexOf('\\')), "").Replace("\"","");
+                 
+                    s = s.Replace(s.Substring(0, s.LastIndexOf('\\') + 1), "").Replace("\"", ""); 
                 }
                 catch (Exception ex)
                 {
@@ -132,3 +127,4 @@ namespace Java_compiler
         }
     }
 }
+
